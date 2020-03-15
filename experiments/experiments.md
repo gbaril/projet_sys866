@@ -1,11 +1,17 @@
 # My experiments 
 
+## Prototypical Network
+
 python -m experiments.proto_nets --dataset omniglot --distance l2 --n-train 5 --q-train 15 --k-train 20 --n-test 5 --k-test 5
 python -m experiments.proto_nets --dataset omniglot --distance l2 --n-train 5 --q-train 15 --k-train 20 --n-test 1 --k-test 5
-python -m experiments.proto_nets --dataset miniImageNet --distance l2 --n-train 5 --q-train 15 --k-train 20 --n-test 1 --k-test 5
 python -m experiments.proto_nets --dataset miniImageNet --distance l2 --n-train 5 --q-train 15 --k-train 20 --n-test 5 --k-test 5
+python -m experiments.proto_nets --dataset miniImageNet --distance l2 --n-train 5 --q-train 15 --k-train 20 --n-test 1 --k-test 5
 python -m experiments.proto_nets --dataset cub200 --distance l2 --n-train 5 --q-train 15 --k-train 20 --n-test 5 --k-test 5
 python -m experiments.proto_nets --dataset cub200 --distance l2 --n-train 5 --q-train 15 --k-train 20 --n-test 1 --k-test 5
+
+## MAML
+python -m experiments.maml --dataset omniglot --order 1 --n 5 --k 20 --meta-batch-size 16 --inner-train-steps 5 --inner-val-steps 5 --inner-lr 0.1 --eval-batches 20 --epoch-len 100
+python -m experiments.maml --dataset omniglot --order 1 --n 1 --k 20 --meta-batch-size 16 --inner-train-steps 5 --inner-val-steps 5 --inner-lr 0.1 --eval-batches 20 --epoch-len 100
 
 # Examples of experiments
 
