@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader
 from torch import nn
 import argparse
 
-from few_shot.datasets import OmniglotDataset, MiniImageNet
+from few_shot.datasets import OmniglotDataset, MiniImageNet, Cub200Dataset
 from few_shot.core import NShotTaskSampler, create_nshot_task_label, EvaluateFewShot
 from few_shot.maml import meta_gradient_step
 from few_shot.models import FewShotClassifier
@@ -48,6 +48,10 @@ if args.dataset == 'omniglot':
 elif args.dataset == 'miniImageNet':
     dataset_class = MiniImageNet
     fc_layer_size = 1600
+    num_input_channels = 3
+elif args.dataset == 'cub200':
+    dataset_class = Cub200Dataset
+    fc_layer_size = 1024
     num_input_channels = 3
 else:
     raise(ValueError('Unsupported dataset'))
