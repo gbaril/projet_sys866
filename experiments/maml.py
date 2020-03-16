@@ -47,7 +47,7 @@ if args.dataset == 'omniglot':
     num_input_channels = 1
 elif args.dataset == 'miniImageNet':
     dataset_class = MiniImageNet
-    fc_layer_size = 1600
+    fc_layer_size = 1024
     num_input_channels = 3
 elif args.dataset == 'cub200':
     dataset_class = Cub200Dataset
