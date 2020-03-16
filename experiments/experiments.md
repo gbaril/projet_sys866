@@ -13,6 +13,7 @@ python -m experiments.proto_nets --dataset cub200 --distance l2 --n-train 5 --q-
 python -m experiments.maml --dataset omniglot --order 1 --n 5 --k 20 --meta-batch-size 16 --inner-train-steps 5 --inner-val-steps 5 --inner-lr 0.1 --eval-batches 20 --epoch-len 100
 python -m experiments.maml --dataset omniglot --order 1 --n 1 --k 20 --meta-batch-size 16 --inner-train-steps 5 --inner-val-steps 5 --inner-lr 0.1 --eval-batches 20 --epoch-len 100
 python -m experiments.maml --dataset cub200 --order 1 --n 5 --k 20 --meta-batch-size 4 --inner-train-steps 5 --inner-val-steps 5 --inner-lr 0.05 --eval-batches 20 --epoch-len 100
+python -m experiments.maml --dataset cub200 --order 1 --n 1 --k 20 --meta-batch-size 4 --inner-train-steps 5 --inner-val-steps 5 --inner-lr 0.05 --eval-batches 20 --epoch-len 100
 
 # Examples of experiments
 
