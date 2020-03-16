@@ -21,3 +21,9 @@ Ce travail a été pris de [oscarknagg](https://github.com/oscarknagg/few-shot).
    Il a aussi fallu changer la grosseur des images MiniImageNet pour qu'elles soient 64x64 au lieu de 84x84.  Sinon, je ne pouvais pas entrer les images dans la mémoire de mon GPU.
 
 * Ajout du paramètre [cub200](./experiments/proto_nets.py) afin d'entrainer le Prototypical Network sur le dataset CUB200.
+
+* Ajout du paramètre [cub200](./experiments/maml.py) afin d'entrainer le MAML sur le dataset CUB200.
+
+* Creation et entrainement des modèles [MAML](./models/maml/) et [Prototypical Network](./models/proto_nets/).
+
+* Sauvegarde des pertes et des précisions lors de l'entrainement de chaque [model](./logs/).
