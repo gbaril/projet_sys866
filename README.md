@@ -27,3 +27,5 @@ Ce travail a été pris de [oscarknagg](https://github.com/oscarknagg/few-shot).
 * Creation et entrainement des modèles [MAML](./models/maml/) et [Prototypical Network](./models/proto_nets/).
 
 * Sauvegarde des pertes et des précisions lors de l'entrainement de chaque [model](./logs/).
+
+* Creation du [script](./graphmaker.ipynb) qui permet de générer les graphiques présents dans l'annexe du rapport.
